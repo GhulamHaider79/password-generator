@@ -1,0 +1,26 @@
+body{
+    background-color: #020c39;
+}
+.navbar-brand{
+    color: #fff;
+}
+.navbar-toggler{
+    border: 1px solid #fff;
+    
+}
+.nav-link{
+    color: #fff;!important
+}
+#nav-home {
+    color: #fff;!important
+}
+.navbar-brand-second{
+    background-color: #fff;
+    border-radius: 12px;
+    color: black;
+    text-transform: capitalize;
+
+}
+.navbar-brand-second:hover{
+    background-color: rgb(231, 248, 248);
+}
