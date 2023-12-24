@@ -83,26 +83,28 @@
         <!--password Generator-->
 
         <div class="container-lg d-flex flex-column gap-3 align-items-center mt-5">
-           <form class="generated-password-form">
+           <div class="generated-password-form">
             <label for="generated-password">Generated password:</label>
-            <input type="text" id="generated-password:">
-           </form>
+            <div id="generated-password"><h4 id="showPasswordLast"></h4> </div>
+           </div>
         </div>
         <div class="container-md my-container d-flex flex-row gap-3 align-items-center justify-content-between  mt-5 mb-5 ">
             <div>
              <label for="password-btn" class="password-btn-label"> password:</label> <br>
-             <button id="password-btn">Random Password</button>
+             <button type="submit" id="password-btn" onclick="submit()">Random Password</button>
             </div>
            <div> 
-            <button class="regenerate-btn">Regenerate</button>
+            <button type="submit" class="regenerate-btn" onclick="submit()">Regenerate</button>
         </div>
             
            <div> 
-            <button class="mt-3" id="copy-secure-password-btn">copy secure password</button>
+            <button onclick="copyToClipboard()" class="mt-3" id="copy-secure-password-btn">copy secure password</button>
         </div>
                
          </div>
+         
 
+         <script src="app.js"></script>
         </body>
 
 </html>
