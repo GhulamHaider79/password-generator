@@ -24,3 +24,97 @@ body{
 .navbar-brand-second:hover{
     background-color: rgb(231, 248, 248);
 }
+@media screen and (min-width: 701px) {
+    .my-card{
+        flex-direction: column;
+    }
+}
+.card-text{
+    text-align: center;!important
+}
+.frist-div-btn{
+    background-color: #0572ec;
+    border: 2px solid transparent;
+    border-radius: 60px;
+    color: #fff;
+    width: 15rem;
+    padding: 8px 24px;
+}
+@media screen and (min-width: 701px) {
+    
+    .frist-div-btn{
+        display: flex;
+    }
+    .frist-div-btn-2{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .my-card{
+        display: flex;
+        flex-direction: column;!important
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+    .frist-div-btn{
+        display: none;
+    }
+    .frist-div-btn-2{
+        display: flex;
+        justify-content: center;
+        background-color: #0572ec;
+        border: 2px solid transparent;
+        border-radius: 60px;
+        color: #fff;
+        width: 8rem;
+        padding: 8px 24px;
+    }
+    
+    .frist-div-btn-2{
+        display: flex;
+    }
+}
+.need-password-heading{
+    color: #fff;
+    max-width: 55em;
+    text-align: center;
+    font-weight: 700;
+    
+}
+.generated-password-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.generated-password-form>label{
+ color: #fff;
+}
+.generated-password-form>input{
+    width: 90%;
+    border-radius: 6px;
+    padding: 16px;
+    
+}
+.password-btn-label{
+    color: #fff;
+}
+#password-btn,#copy-secure-password-btn{
+    width: 15rem;
+    border-radius: 16px;
+    padding: 12px 24px 12px 24px;
+    text-transform: capitalize;
+    
+}
+
+.regenerate-btn{
+    background-color: #0572ec;
+    border: 2px solid transparent;
+    border-radius: 60px;
+    color: #fff;
+    width: 120px;
+    height: 50px;
+    margin-top: 15px;
+    
+}
