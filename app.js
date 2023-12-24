@@ -7,6 +7,8 @@ var specialCharacter = "!@#$%^&*()_+-=[]{}|;:,./<>?"
 // var randomLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
 // console.log(randomLetter);
 
+
+// function for password generator
 var password = "";
 
 function submit (){
@@ -28,9 +30,7 @@ function submit (){
 }
 
 
-
-
-
+// function for copy to clipboard
 
 function copyToClipboard() {
     
@@ -44,9 +44,12 @@ function copyToClipboard() {
     document.execCommand("copy");
   
     window.getSelection().removeAllRanges();
+
+    
+  alert("Text copied to clipboard: " +  copyText.innerText);
   
  
-    console.log(copyText);
+    console.log(copyText).innerHTML;
   }
 
   
