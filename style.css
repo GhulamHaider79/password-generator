@@ -1,5 +1,24 @@
 body{
     background-color: #020c39;
+    position: relative;
+}
+.top{
+    display: flex;
+}
+.navbar-befor{
+    background-color: transparent;
+    font-weight: bold;
+}
+.navbar-after{
+   z-index: 1;
+    align-self: center;
+    width: 100%;
+    border: 1px solid gray;
+    background-color: #0572ec;
+    position: fixed;
+    top: 5px;
+    left: 50;
+    
 }
 .navbar-brand{
     color: #fff;
@@ -87,9 +106,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.generated-password-form>label{
+.generated-password-label{
  color: #fff;
+ margin-left: 1.4rem;
+ font-weight: bold;
 }
 #generated-password{
     display: flex;
@@ -106,6 +128,7 @@ body{
 }
 .password-btn-label{
     color: #fff;
+    font-weight: bold;
 }
 #password-btn,#copy-secure-password-btn{
     width: 15rem;
@@ -124,4 +147,20 @@ body{
     height: 50px;
     margin-top: 15px;
     
+} 
+
+
+@media screen and (min-width: 310px ) and (max-width: 650px) {
+    #large{
+        display: flex;
+        flex-direction: column;
+    }
+    .regenerate-btn{
+        border: 2px solid transparent;
+        border-radius: 16px;
+        width: 15rem;
+        height: 50px;
+    } 
+    
+       
 }

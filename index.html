@@ -14,13 +14,13 @@
 </head>
 
 <body>
-    
-        <nav class="navbar navbar-expand-lg  bg-primary" data-bs-theme="primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Password Generator</a>
-                <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" 
+
+
+    <nav id="navbar" class="navbar navbar-befor navbar-expand-lg">
+        <div class="container-fluid px-4 pt-2 ">
+            <a class="navbar-brand" href="#">Password Generator</a>
+            <button class="navbar-toggler bg-light " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation ">
                 <span class="navbar-toggler-icon "></span>
             </button>
@@ -33,18 +33,21 @@
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Dropdown
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Support hub</a></li>
                             <li><a class="dropdown-item" href="#">Community forum</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="#">Talk to Support</a></li>
                         </ul>
                     </li>
                 </ul>
-                
+
                 <ul class="navbar-nav  mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active " id="nav-home" aria-current="page" href="#">Sign in</a>
@@ -56,55 +59,59 @@
             </div>
         </div>
     </nav>
-</nav>
+    </nav>
 
-      <!--first card-->
-      <div class="container-md column-gap-lg-0  d-flex justify-content-center mt-5">
-            <div class="card my-card w-auto  mb-3 d-flex flex-row  justify-content-between px-0 py-5 ">
-              <div class="card-body">
-                  <h5 class="card-title">Your passwords, wherever you are</h5>
-                  <p class="card-text">Store your new password in 1Password so you can fill it from any device.</p>
-                 
-                </div >
-                <div class="card-body">
-                    <a href="#" class="btn btn-primary frist-div-btn">Try FREE for 14 days</a>
-                    <a href="#" class="btn btn-primary frist-div-btn-2">Try FREE</a>
-                </div>
+
+    <!--first card-->
+    <div class="container-md column-gap-lg-0  d-flex justify-content-center mt-5">
+        <div class="card my-card w-auto  mb-3 d-flex flex-row  justify-content-between px-0 py-5 ">
+            <div class="card-body">
+                <h5 class="card-title">Your passwords, wherever you are</h5>
+                <p class="card-text">Store your new password in 1Password so you can fill it from any device.</p>
+
+            </div>
+            <div class="card-body">
+                <a href="#" class="btn btn-primary frist-div-btn">Try FREE for 14 days</a>
+                <a href="#" class="btn btn-primary frist-div-btn-2">Try FREE</a>
             </div>
         </div>
-        
+    </div>
 
-           <!--Need a password Div-->
-        <div class="container-lg d-flex flex-column  align-items-center mt-5">
-            <h1 class="need-password-heading">Need a password? Try the 1Password Strong Password Generator.</h1>
-            <p class="need-password-heading">Generate secure, random passwords to stay safe online.</p>
-        </div>
 
-        <!--password Generator-->
+    <!--Need a password Div-->
+    <div class="container-lg d-flex flex-column  align-items-center mt-5">
+        <h1 class="need-password-heading">Need a password? Try the 1Password Strong Password Generator.</h1>
+        <p class="need-password-heading">Generate secure, random passwords to stay safe online.</p>
+    </div>
 
-        <div class="container-lg d-flex flex-column gap-3 align-items-center mt-5">
-           <div class="generated-password-form">
-            <label for="generated-password">Generated password:</label>
-            <div id="generated-password"><h4 class="abcd" id="showPasswordLast"></h4> </div>
-           </div>
-        </div>
-        <div class="container-md my-container d-flex flex-row gap-3 align-items-center justify-content-between  mt-5 mb-5 ">
-            <div>
-             <label for="password-btn" class="password-btn-label"> password:</label> <br>
-             <button type="submit" id="password-btn" onclick="submit()">Random Password</button>
+    <!--password Generator-->
+
+    <div class="container-lg d-flex flex-column gap-3   mt-5">
+        <label class="generated-password-label" for="generated-password">Generated password:</label>
+        <div class="generated-password-form ">
+            
+            <div id="generated-password">
+                <h4 class="abcd" id="showPasswordLast"></h4>
             </div>
-           <div> 
+        </div>
+    </div>
+    <div id="large" class="container-md gap-1  d-flex align-items-center mt-5 mb-5 ">
+        <div>
+            <label for="password-btn" class="password-btn-label"> password:</label> <br>
+            <button type="submit" id="password-btn" onclick="submit()">Random Password</button>
+        </div>
+        <div>
             <button type="submit" class="regenerate-btn" onclick="submit()">Regenerate</button>
         </div>
-            
-           <div> 
+
+        <div>
             <button onclick="copyToClipboard()" class="mt-3" id="copy-secure-password-btn">copy secure password</button>
         </div>
-               
-         </div>
-         
 
-         <script src="app.js"></script>
-        </body>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
 
 </html>
